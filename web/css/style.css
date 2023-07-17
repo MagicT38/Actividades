@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+a {
+    text-decoration:  none;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+
+  
+/*  ESTILO FONDOS*/
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+}
+
+
+.body{
+    background: rgb(245,69,146);
+background: radial-gradient(circle, rgba(245,69,146,1) 34%, rgba(177,101,241,1) 62%, rgba(66,144,236,1) 92%);
+
+}
+
+.rom0{
+    background: rgb(182,175,170);
+background: radial-gradient(circle, rgba(182,175,170,1) 25%, rgba(120,19,180,1) 46%, rgba(124,246,81,1) 59%, rgba(255,255,255,1) 77%, rgba(212,12,12,1) 81%);
+}
+.rom{
+    background: rgb(118,245,69);
+background: radial-gradient(circle, rgba(118,245,69,1) 34%, rgba(101,241,187,1) 62%, rgba(236,66,228,1) 92%);
+}
+
+.rom1{
+    background: rgb(132,69,245);
+background: radial-gradient(circle, rgba(132,69,245,1) 34%, rgba(234,241,101,1) 62%, rgba(236,66,66,1) 92%);
+}
+
+.rom2{
+background: rgb(245,69,69);
+background: radial-gradient(circle, rgba(245,69,69,1) 34%, rgba(101,183,241,1) 62%, rgba(234,236,66,1) 92%);
+}
+
+.rom3{
+    background: rgb(245,69,192);
+background: radial-gradient(circle, rgba(245,69,192,1) 25%, rgba(69,166,245,1) 34%, rgba(255,255,255,1) 64%, rgba(147,66,236,1) 92%);
+}
+
+.rom4{
+    background: rgb(245,144,69);
+background: radial-gradient(circle, rgba(245,144,69,1) 25%, rgba(71,245,69,1) 46%, rgba(246,185,81,1) 59%, rgba(66,188,236,1) 79%, rgba(255,255,255,1) 92%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 140px;
+}
+
+.container .card {
+    position: relative;
+    width: 250px;
+    height: 290px;
+    background: #000;
+    border-radius: 0px 50px 0px 50px;
+ 
+    overflow: hidden;
+}
+
+.container .card .box {
+    position: absolute;
+    inset: 20px;  
+    background: #b3e4a2;
+    border-radius: 0px;
+}
+
+
+
+.container .card:hover .box .icon {
+    width: 100%;
+}
+
+
+
+
+
+
+.centrado {
+  text-align: center;
+  font-size: medium;
+  color: black;
+}
+
+
+.container .card .box .content {
+    position: absolute;
+    top: 90px;
+    text-align: center;
+}
+
+.container .card .box .content h3 {
+    color: #333;
+    font-size: 1.35em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.container .card .box .content p {
+    color: #333;
+    font-size: .95em;
+    opacity: 0.75;
+    margin: 0px 0px 10px;
+}
+
+.container .card .box .content input {
+    background: #c21f1f;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+   
+  
+}
+
+.container .card .box .content input:hover {
+    letter-spacing: 0.2em;
+}
+
+/* FORMULA */
+.text-formula {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 150;
+}
+
+.v-a {
+  color: rgb(151,249,216);
+}
+
+.v-b {
+  color: rgb(241,194,50);
+}
+
+.v-c {
+  color: rgb(143,206,0);
+}
+
+ .contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* FORMULARIO CONTENEDOR */
+.cont-form form input[type="text"] {
+    width: 100%;
+    height: 50%;
+    border:  solid #000 3px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.cont-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cont-img img {
+  width: 300px;
+  margin: auto;
+}
+
+
+.imagen:hover{
+border-radius:50%;
+-webkit-border-radius:50%;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+
+/* ESTILO BOTON CALCULAR*/
+.cont-form form input[type="submit"] {
+    width: 200px;
+    height: 45px;
+    border-radius: 50px;
+    background: #97F9D8;
+    color: #000;
+    align-items: center;
+    font-size: 20px;
+}
+.cont-btn {
+    display: inline-block;
+}
+.cont-regresar {
+    display: inline-block;
+}
+
+/*Estilo Boton siguiente pagina*/
+.cont-regresar a {
+     width: 200px;
+    height: 45px;
+    background: #97F9D8;
+    padding: 10px;
+    color: #000;
+    border-radius: 50px;
+    border: solid #000 2px;
+    text-align: left;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/* Clase Animaciones de Imagen */
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #003298;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+          transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+          animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #0051f4;
+}
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@-webkit-keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
